@@ -1,0 +1,317 @@
+main {
+  min-height: 100%;
+  margin-bottom: -70px;
+}
+
+html,
+body,
+#root,
+.App {
+  height: 100%;
+  margin: 0;
+}
+
+header {
+  height: 90px;
+  width: 100%;
+  color: white;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header ul,
+footer ul {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  margin-right: 15px;
+  gap: 30px;
+}
+
+.icon {
+  margin-left: 20px;
+  width: 40px;
+  height: 40px;
+}
+
+header li,
+footer li {
+  list-style: none;
+}
+
+header a,
+footer a {
+  color: white;
+}
+
+#title {
+  font-size: 25px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#jumbotron {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#impact-message {
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+#page-name {
+  font-size: 60px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+article {
+  width: 1200px;
+  display: flex;
+  justify-content: center;
+}
+
+#article-booking,
+#article-menu,
+#article-order,
+#article-add-food,
+#article-admin {
+  margin: 50px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.article-about {
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+}
+
+.jumbotron-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.jumbo-impact {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.jumbo-item {
+  width: 50%;
+}
+
+.margin-item {
+  margin: 50px;
+}
+
+#menu-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.menu-food {
+  width: 200px;
+  height: 200px;
+}
+
+.mesa-elegante {
+  background-image: url("./images/mesa-elegante.jpg");
+  width: 1200px;
+  height: 300px;
+}
+
+.shadow {
+  border: 1px solid black;
+  box-shadow: 0 0 5px 1px #282a2d;
+}
+
+footer {
+  height: 70px;
+  width: 100%;
+  color: white;
+  background-color: black;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.food {
+  padding: 10px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 8px;
+  width: 250px;
+  margin: 8px;
+  color: black;
+  height: fit-content;
+}
+
+.add-food {
+  display: flex;
+  flex-direction: column;
+}
+
+.label-input-container {
+  width: 300px;
+}
+
+fooder {
+  flex-shrink: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.column {
+  flex-direction: column;
+  align-items: center;
+}
+
+.label-input {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 5px;
+}
+
+button {
+  margin: 70px;
+}
+
+#article-menu button {
+  margin: 5px
+}
+
+#inputBooking {
+  width: 300px;
+}
+
+
+td {
+  vertical-align: top;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+
+  .article-about {
+    flex-direction: column;
+    margin: 20px;
+    width: 1024px;
+    align-items: center;
+  }
+
+  .jumbo-impact {
+    display: flex;
+    flex-direction: row;
+    width: 1024px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mesa-elegante {
+    width: 1024px;
+    height: 300px;
+  }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+  .article-about {
+    flex-direction: column;
+    margin: 20px;
+    width: 767px;
+    align-items: center;
+  }
+
+  .jumbo-impact {
+    display: flex;
+    flex-direction: column;
+    width: 768px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mesa-elegante {
+    width: 768px;
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+
+  .mesa-elegante {
+    max-height: fit-content;
+    width: 500px;
+  }
+
+  #jumbotron {
+    width: 100%;
+  }
+
+  .jumbo-impact {
+    flex-direction: column;
+  }
+
+  .article-about {
+    width: 550px;
+    flex-direction: column;
+    margin: 20px;
+    align-items: center;
+  }
+
+  .page-name {
+    font-size: 60px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: auto;
+  }
+
+  header {
+    height: auto;
+  }
+
+  header ul {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  #impact-message {
+    white-space:initial
+  }
+
+  .shadow {
+    border: 1px solid black;
+    box-shadow: 0 0 5px 1px #282a2d;
+  }
+
+  footer {
+    height: auto;
+  }
+
+  footer ul {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
